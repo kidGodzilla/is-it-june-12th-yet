@@ -1,0 +1,9 @@
+{
+  "firebase": "is-it-june-12th-yet",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

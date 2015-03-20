@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html data-ember-extension="1">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Is it June 12th yet?</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--<base href="/">--><base href=".">
+    <meta name="isemberfastyet/config/environment" content="%7B%22modulePrefix%22%3A%22isemberfastyet%22%2C%22environment%22%3A%22development%22%2C%22baseURL%22%3A%22/%22%2C%22locationType%22%3A%22auto%22%2C%22contentSecurityPolicy%22%3A%7B%22default-src%22%3A%22%27none%27%22%2C%22script-src%22%3A%22%27self%27%22%2C%22font-src%22%3A%22%27self%27%22%2C%22connect-src%22%3A%22%27self%27%20wss%3A//*.firebaseio.com%22%2C%22img-src%22%3A%22%27self%27%22%2C%22style-src%22%3A%22%27self%27%20%27unsafe-inline%27%22%2C%22media-src%22%3A%22%27self%27%22%7D%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22isemberfastyet%22%2C%22version%22%3A%220.0.0.7296db32%22%7D%2C%22contentSecurityPolicyHeader%22%3A%22Content-Security-Policy-Report-Only%22%2C%22exportApplicationGlobal%22%3Atrue%7D">
+
+
+    <link rel="stylesheet" href="https://www.isemberfastyet.com/assets/vendor.css">
+    <link rel="stylesheet" href="https://www.isemberfastyet.com/assets/isemberfastyet.css">
+
+    
+    <style type="text/css">
+        body {
+            font-family: Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+  
+
+    <p style="width:100%;text-align:center">
+        Is it June 12th yet?
+    </p>
+
+    <div class="answer" style="width:100%;text-align:center">NO</div>
+
+    <div>
+        <div id="ember437" class="ember-view ember-progress disable-animating remove-animating"><div class="total">
+            <div class="completed">
+                3064 of 3490 framework tests passing (426 to go!)
+            </div>
+        </div>
+        </div>
+        <div class="trend" style="width:100%;text-align:center">▲ <span>29</span> days since March 3rd (time is trending forward)</div>
+    </div>
+
+    <main>
+        <p class="info">
+            At EmberConf 2015, Tom and Yehuda introduced a new rendering engine for
+            Ember.js. Dubbed <strong>Glimmer</strong>, it makes UI rendering
+            incredibly fast. <a href="http://f.cl.ly/items/0t031v2Z3y001V1N0F3N/Virtual%20DOM.pdf">
+            These slides</a> compare Glimmer with a traditional DOM-diffing
+            render.
+        </p>
+        <p class="info">
+            To make Ember fast, help us ship Glimmer or just follow along
+            <a href="https://github.com/emberjs/ember.js/pull/10501">on GitHub</a>.
+        </p>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p style="width:100%;text-align:center">
+            How fast is fast? Check out the <a href="https://dbmonster.firebaseapp.com/">demo app</a> (<a href="https://github.com/wycats/dbmonster">source</a>)
+        </p>
+    </footer>
+</div>
+
+<!--<script src="vendor.js"></script>-->
+<!--<script src="isemberfastyet.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+    function dayOfYear () {
+        var now = new Date();
+        var start = new Date(now.getFullYear(), 0, 0);
+        var diff = now - start;
+        var oneDay = 1000 * 60 * 60 * 24;
+        return Math.floor(diff / oneDay);
+    }
+
+    // Announcement: 62
+    // June 12th: 171?
+    // total bar length: 109
+    // p / 109
+    var doy = dayOfYear();
+    var r = 171 - doy;
+    var p = doy - 62;
+    if (r <= 0) $('#answer').html('yes');
+    var pc = (p / 109) * 100;
+    $('.trend span').html(p);
+    $('.completed').html(p + ' of 109 days have passed (' + r + ' to go!)');
+    $('.completed').css('width', pc + '%');
+
+    // Redirect mobile to escape frameset sadness
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && window.top.location.href !== "https://is-it-june-12th-yet.firebaseapp.com/") {
+        window.top.location.href = "https://is-it-june-12th-yet.firebaseapp.com/";
+    }
+</script>
+</body>
+</html>
