@@ -1,0 +1,65 @@
+body {
+  color: #334; }
+
+a {
+  color: #FF6138;
+  text-decoration: none; }
+
+img {
+  position: absolute;
+  left: 15px;
+  top: 15px; }
+
+.ember-application {
+  max-width: 900px;
+  margin: 29px auto;
+  font-family: Helvetica, sans-serif;
+  text-align: center; }
+
+.answer {
+  margin: 60px 0;
+  font-size: 200px;
+  font-weight: bold; }
+
+.ember-progress .total {
+  border: 1px solid #00A388;
+  height: 25px;
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 20px;
+  overflow: hidden; }
+.ember-progress .completed {
+  box-sizing: border-box;
+  background-color: #00A388;
+  height: 25px;
+  transition: width 1s ease-in;
+  text-align: left;
+  color: white;
+  line-height: 27px;
+  padding-left: 10px; }
+.ember-progress.disable-animating .completed {
+  transition: none; }
+
+.trend {
+  margin-top: 10px;
+  color: #00A388; }
+
+main {
+  width: 80%;
+  text-align: left;
+  margin: 60px auto;
+  line-height: 22px; }
+
+img {
+  margin: 25px; }
+
+hr {
+  border: none;
+  border-top: 1px solid #00A388;
+  width: 60%;
+  margin-bottom: 50px; }
+
+footer {
+  font-size: 1.7em;
+  color: #030;
+  margin: 50px auto 0; }
