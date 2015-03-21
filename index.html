@@ -1,78 +1,69 @@
 <!DOCTYPE html>
-<html data-ember-extension="1">
+<html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Is it June 12th yet?</title>
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <base href=".">
-    <meta name="isemberfastyet/config/environment" content="%7B%22modulePrefix%22%3A%22isemberfastyet%22%2C%22environment%22%3A%22development%22%2C%22baseURL%22%3A%22/%22%2C%22locationType%22%3A%22auto%22%2C%22contentSecurityPolicy%22%3A%7B%22default-src%22%3A%22%27none%27%22%2C%22script-src%22%3A%22%27self%27%22%2C%22font-src%22%3A%22%27self%27%22%2C%22connect-src%22%3A%22%27self%27%20wss%3A//*.firebaseio.com%22%2C%22img-src%22%3A%22%27self%27%22%2C%22style-src%22%3A%22%27self%27%20%27unsafe-inline%27%22%2C%22media-src%22%3A%22%27self%27%22%7D%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22isemberfastyet%22%2C%22version%22%3A%220.0.0.7296db32%22%7D%2C%22contentSecurityPolicyHeader%22%3A%22Content-Security-Policy-Report-Only%22%2C%22exportApplicationGlobal%22%3Atrue%7D">
-
     <link rel="stylesheet" href="isemberfastyet.css">
     
     <style type="text/css">
         body {
             font-family: Helvetica, sans-serif;
         }
+        .centered {
+            width: 100%;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <p style="width:100%;text-align:center">
-        Is it June 12th yet?
-    </p>
+<p class="centered">
+    Is it June 12th yet?
+</p>
 
-    <div class="answer" style="width:100%;text-align:center">NO</div>
+<div class="answer centered">NO</div>
 
-    <div>
-        <div id="ember437" class="ember-view ember-progress disable-animating remove-animating"><div class="total">
+<div>
+    <div id="ember437" class="ember-view ember-progress disable-animating remove-animating">
+        <div class="total">
             <div class="completed"></div>
         </div>
-        </div>
-        <div class="trend" style="width:100%;text-align:center">▲ <span>17</span> days since March 3rd (time is trending forward)</div>
     </div>
+    <div class="trend centered">▲ <span>17</span> days since March 3rd (time is trending forward)</div>
+</div>
 
-    <main>
-        <p class="info">
-            At EmberConf 2015, Tom and Yehuda announced that Ember 2.0 will ship on June 12th, 2015,
-            along with <a href="http://emberjs.com/blog/2014/03/18/the-road-to-ember-data-1-0.html">Ember-data 1.0</a>, Ember-CLI 1.0, Ember Inspector 1.0 & Liquid Fire 1.0.
-            <a href="https://www.youtube.com/watch?v=o12-90Dm-Qs&list=PLE7tQUdRKcyacwiUPs0CjPYt6tJub4xXU&t=2284">Watch the video</a>
-        </p>
-        <p class="info">
+<main>
+    <p class="info">
+        At EmberConf 2015, Tom and Yehuda announced that Ember 2.0 will ship on June 12th, 2015,
+        along with <a href="http://emberjs.com/blog/2014/03/18/the-road-to-ember-data-1-0.html">Ember-data 1.0</a>, Ember-CLI 1.0, Ember Inspector 1.0 & Liquid Fire 1.0.
+        <a href="https://www.youtube.com/watch?v=o12-90Dm-Qs&list=PLE7tQUdRKcyacwiUPs0CjPYt6tJub4xXU&t=2284">Watch the video</a>
+    </p>
+    <p class="info">
         They also introduced a new rendering engine for
         Ember.js. Dubbed <strong>Glimmer</strong>, it makes UI rendering
         incredibly fast. <a href="http://f.cl.ly/items/0t031v2Z3y001V1N0F3N/Virtual%20DOM.pdf">
         These slides</a> compare Glimmer with a traditional DOM-diffing
         render.
-        </p>
-        <p class="info">
-            <u>Only you</u> can help make June 12th arrive sooner.
-            <a href="https://github.com/emberjs/ember.js/pull/10501">Contribute on GitHub</a>.
-        </p>
-        <!--<p class="info">-->
-            <!--At EmberConf 2015, Tom and Yehuda introduced a new rendering engine for-->
-            <!--Ember.js. Dubbed <strong>Glimmer</strong>, it makes UI rendering-->
-            <!--incredibly fast. <a href="http://f.cl.ly/items/0t031v2Z3y001V1N0F3N/Virtual%20DOM.pdf">-->
-            <!--These slides</a> compare Glimmer with a traditional DOM-diffing-->
-            <!--render.-->
-        <!--</p>-->
-        <!--<p class="info">-->
-            <!--To make Ember fast, help us ship Glimmer or just follow along-->
-            <!--<a href="https://github.com/emberjs/ember.js/pull/10501">on GitHub</a>.-->
-        <!--</p>-->
-    </main>
+    </p>
+    <p class="info">
+        <u>Only you</u> can help make June 12th arrive sooner.
+        <a href="https://github.com/emberjs/ember.js/pull/10501">Contribute on GitHub</a>.
+    </p>
+</main>
 
-    <hr>
+<hr>
 
-    <footer>
-        <p style="width:100%;text-align:center">
-            How fast is fast? Check out the <a href="https://dbmonster.firebaseapp.com/">demo app</a> (<a href="https://github.com/wycats/dbmonster">source</a>)
-        </p>
-    </footer>
-    <p style="width:100%;text-align:center"><i>Inspired by <a href="https://www.isemberfastyet.com/">Is Ember fast yet</a></i></p>
-</div>
+<footer>
+    <p class="centered">
+        How fast is fast? Check out the <a href="https://dbmonster.firebaseapp.com/">demo app</a> (<a href="https://github.com/wycats/dbmonster">source</a>)
+    </p>
+</footer>
+
+<p class="centered">
+    <i>Inspired by <a href="https://www.isemberfastyet.com/">Is Ember fast yet</a></i>
+</p>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
