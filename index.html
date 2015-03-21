@@ -86,24 +86,14 @@
         return Math.floor((now - first) / 86400000);
     }
 
-    // Announcement: Day 62
-    // June 12th: 171?
-    // Total bar length: 109 days
-    // Bar percent: p / 109
-
     var doy = dayOfYear();
     var r = 171 - doy;
     var p = doy - 62;
+    var pc = p / 1.09;
     if (r <= 0) $('#answer').html('yes');
-    var pc = (p / 109) * 100;
+    pc = pc > 25 ? (pc > 100 ? 100 : pc) : 25;
+    $('.completed').html(p + ' of 109 days have passed (' + r + ' to go!)').css('width', pc + '%');
     $('.trend span').html(p);
-    $('.completed').html(p + ' of 109 days have passed (' + r + ' to go!)');
-    $('.completed').css('width', pc + '%');
-
-    // Redirect mobile users to escape frameset sadness (if applicable)
-    // if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && window.top.location.href !== "https://is-it-june-12th-yet.firebaseapp.com/") {
-    //     window.top.location.href = "https://is-it-june-12th-yet.firebaseapp.com/";
-    // }
 </script>
 </body>
 </html>
